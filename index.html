@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="shortcut icon" href="src/imagens/logo-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="form">
+        <form>
+            <fieldset>
+                <legend><b>Formulário de Clientes</b></legend>
+                <br>
+                <div class="inputBox">
+                    <label>Nome completo:</label>
+                    <input type="text" name="nome" minlength="4" maxlength="130" class="campoInput" required>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" minlength="4" maxlength="100" class="campoInput" required>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" minlength="9" maxlength="20" class="campoInput" required>
+                </div>
+                
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br>
+                
+                <div class="inputBox">
+                    <label for="estado"><b>Estado:</b></label>
+                    <select id="selecao_estado" name="estado" required>
+                        <option value="">Selecione seu estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PB">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <br><br>
+                
+                <div class="inputBox">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" minlength="4" maxlength="40" class="campoInput" required>
+                </div>
+                <br><br>
+                
+                <div class="inputBox">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" minlength="3" maxlength="120" class="campoInput" required>
+                </div>
+                <br><br>
+                
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
